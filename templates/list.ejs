@@ -1,0 +1,36 @@
+<!--
+    List expects a list of posts and some pagination information.
+    Post include the post content extracted from their markdown source,
+    and any frontmatter.
+-->
+
+<% posts.forEach( post => { %>
+<article class="post">
+  <% if(post.frontMatter && post.frontMatter.title) { %>
+  <h2><a href="<%- post.url %>"><%- post.frontMatter.title %></a></h2>
+  <% } %> <%- post.html %>
+</article>
+<% }) %> <% if(totalPages > 1) { %>
+<ul class="pager">
+  <% if(currentPage > 1) { %>
+  <li class="pager__item">
+    <a
+      href="<%= currentPage - 1 === 1 ? 'index.html' : `page-${currentPage - 1}`%>"
+      >Previous</a
+    >
+  </li>
+  <% } %> <% for(var i=1; i <= totalPages; i++) {%>
+  <li class="pager__item">
+    <% if(i === currentPage) { %>
+    <span><%= i %></span>
+    <% } else { %>
+    <a href="<%= i === 1 ? 'index.html' : `page-${i}`%>"><%= i %></a>
+    <% } %>
+  </li>
+  <% } %> <% if(totalPages > 1 && currentPage < totalPages) { %>
+  <li class="pager__item">
+    <a href="<%= `page-${currentPage + 1}` %>">Next</a>
+  </li>
+  <% } %>
+</ul>
+<% } %>
