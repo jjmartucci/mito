@@ -1,26 +1,19 @@
 {
   "name": "mito",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjmartucci/mito"
+  },
   "version": "1.0.0",
   "description": "The simplest static site generator.",
   "main": "index.js",
   "scripts": {
-    "build": "node ./scripts/build.js",
-    "buildTest": "node ./scripts/buildTest.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./scripts/watch.js"
+    "build": "mito",
+    "start": "mito-watch"
   },
   "author": "Joe Marutcci",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.0.1",
-    "fs-extra": "^8.1.0",
-    "glob": "^7.1.6",
-    "gray-matter": "^4.0.2",
-    "markdown-it": "^10.0.0",
-    "moment": "^2.24.0"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "node-watch": "^0.6.3"
+    "mito-core": "^1.0.2"
   }
 }

@@ -7,6 +7,20 @@ module.exports = {
   postsPerPage: 5,
   siteTitle: "My new site",
 
+  /*
+   * Pick a CSS theme. The default is "mito".
+   * - mito
+   * - nord
+   */
+  theme: "mito",
+
+  /*
+   * If your post has post-date in the frontmatter, it'll will be formatted
+   * like this on the individual post page. Any valid moment formats will work.
+   * https://momentjs.com/docs/#/displaying/
+   */
+  postDateFormat: "MMM Do, YYYY",
+
   // these are the default site metatags
   meta: {
     title: "My new site",

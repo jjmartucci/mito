@@ -16,6 +16,9 @@
     />
 
     <link rel="stylesheet" href="/css/styles.css" />
+    <% if(theme) { %>
+    <link rel="stylesheet" href="<%- `/css/themes/${theme}.css`%>" />
+    <% } %>
   </head>
 
   <body>

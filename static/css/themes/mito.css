@@ -1,0 +1,17 @@
+:root {
+  --blockquote-border: var(--color-code-background);
+  --color-accent: rgba(227, 220, 255, 1);
+  --color-code-background: rgba(233, 233, 233, 1);
+  --color-code-copy: rgba(28, 66, 122, 1);
+  --color-copy: rgba(36, 36, 36, 1);
+  --color-headers: rgba(3, 9, 46, 1);
+  --color-link: rgba(108, 135, 116, 1);
+  --color-main-bg: rgba(255, 255, 255, 1);
+
+  --font-body: "Average", serif;
+  --font-body-size: 1.2rem;
+  --font-blockquote-mutlipler: 1.1;
+  --font-heading: "Fjalla One", sans-serif;
+
+  --main-column-max-width: 800px;
+}

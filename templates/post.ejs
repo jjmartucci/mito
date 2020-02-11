@@ -1,5 +1,6 @@
-<article class="post">
+<article class="page">
   <% if (frontMatter.title) {%>
   <h1><%- frontMatter.title %></h1>
-  <% } %><%- typeof html != 'undefined' ? html : ''%>
+  <% if (postedDate) {%><small><%- `Posted: ${postedDate}` %></small><% } %> <%
+  } %><%- typeof html != 'undefined' ? html : ''%>
 </article>

@@ -1,0 +1,15 @@
+:root {
+  --font-body: "Average", serif;
+  --font-body-size: 1.2rem;
+  --font-heading: "Fjalla One", sans-serif;
+
+  --color-accent: #b48ead;
+  --color-code-background: #4c566a;
+  --color-code-copy: #bf616a;
+  --color-copy: #eceff4;
+  --color-headers: rgba(3, 9, 46, 1);
+  --color-link: #8fbcbb;
+  --color-main-bg: #3b4252;
+
+  --main-column-max-width: 800px;
+}
